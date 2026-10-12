@@ -240,11 +240,55 @@ KEYWORDS = [
 "Farg'onaga yuk jo'nataman",
 "yuk bor Toshkentga", "yuk bor Farg'onaga",
 "Toshkentga yuk chiqdi", "Farg'onaga yuk chiqdi",
-"Toshkentga yuk bor ekan", "Farg'onaga yuk bor ekan"
+"Toshkentga yuk bor ekan", "Farg'onaga yuk bor ekan", "Qoshimcha yuk",
+"karobka", "karobkalar", "karobkalar", "qop", "2 qop", "3 qop", "4 qop", "5 qop", "6 qop", "7 qop", "8 qop", "9 qop", "10 qop", 
+"11 qop", "12 qop", "13 qop", "14 qop", "15 qop", "16 qop", "17 qop", "18 qop", "19 qop", "20 qop", 
+"Toshkentdan Rishtonga 2 qop yuk bor", "Toshkentdan Rishtonga 3 qop yuk bor", "Toshkentdan Rishtonga 4 qop yuk bor",    
+"rishtondan toshkentga 2 qop yuk bor", "rishtondan toshkentga 3 qop yuk bor", "rishtondan toshkentga 4 qop yuk bor",    
+"farg'onadan toshkentga 2 qop yuk bor", "farg'onadan toshkentga 3 qop yuk bor", "farg'onadan toshkentga 4 qop yuk bor",
+"fargonadan qoqonga qop yuk bor", "fargonadan qoqonga 2 qop yuk bor", "fargonadan qoqonga 3 qop yuk bor", "fargonadan qoqonga 4 qop yuk bor",   
+"qo'qondan farg'onaga 2 qop yuk bor", "qo'qondan farg'onaga 3 qop yuk bor", "qo'qondan farg'onaga 4 qop yuk bor",   
+"toshkentdan farg'onaga 2 qop yuk bor", "toshkentdan farg'onaga 3 qop yuk bor", "toshkentdan farg'onaga 4 qop yuk bor", 
+"toshkentdan qoqonga 2 qop yuk bor", "toshkentdan qoqonga 3 qop yuk bor", "toshkentdan qoqonga 4 qop yuk bor",
+"fargonaga 2 qop yuk bor", "fargonaga 3 qop yuk bor", "fargonaga 4 qop yuk bor",    
+"qoqonga 2 qop yuk bor", "qoqonga 3 qop yuk bor", "qoqonga 4 qop yuk bor",
+"farg'onadan toshkentga 2 qop yuk bor", "farg'onadan toshkentga 3 qop yuk bor", "farg'onadan toshkentga 4 qop yuk bor",
+"karopkarlar bor", "karopkalar bor", "karobkalar bor", "qoplar bor", "2 qoplar bor", "3 qoplar bor", "4 qoplar bor", "5 qoplar bor", "6 qoplar bor", "7 qoplar bor", "8 qoplar bor", "9 qoplar bor", "10 qoplar bor",
+"karopka bor", "qoshimcha yuk bor", "qo'shimcha yuk bor", "qo'shimcha yuklar bor", "qoshimcha yuklar bor", "qo'shimcha yuk chiqdi", "qo'shimcha yuk chiqibdi", "qo'shimcha yuk chiqibdi aka", "qo'shimcha yuk chiqibdi edi", "qo'shimcha yuk chiqibdi ekan", "qo'shimcha yuk chiqibdi ekan edi",
+"qo'shimcha yuk chiqibdi edi aka", "qo'shimcha yuk chiqibdi edi ekan", "qo'shimcha yuk chiqibdi edi ekan edi",
 ]
 
 
 KEYWORDS_RE = re.compile("|".join(re.escape(k) for k in KEYWORDS), re.IGNORECASE)
+
+# =================== REJECTED KALIT SO'ZLAR ===================
+# Xabarda oddiy kalit so'z topilsa ham, quyidagilardan biri bo'lsa xabar YUBORILMAYDI.
+# Kalit so'zlarni shu ro'yxatga o'zingiz qo'shing, masalan:
+# "kerak emas", "bekor", "yuk yo'q"
+REJECTED_KEYWORDS = [
+    "fura kerak", "isizu", "kamaz", "Nukusdan", "Surxandaryodan", "Nukusga",
+    "surxandaryo", "surxondaryo", "surxandaryoga", "surxandaryoga", "surxandaryodan", "surxondaryodan",
+    "surxandaryoga", "surxondaryoga", "surxandaryodan", "olaman", "odam bor", "odam kerak", "yuk yo'q", "yuk kerak emas", "yuk kerakmas", "yuk kerakmas ekan", "yuk kerak emas ekan",
+    "yuk kerakmas edi", "yuk kerak emas edi", "yuk kerak",
+    "olamiz", "olamiz ekan", "olamiz edi", "olamiz ekan edi", "olamiz edi ekan", "olamiz kerak", "olamiz kerak emas", "olamiz kerakmas", "olamiz kerakmas ekan", "olamiz kerak emas ekan",
+    "olamiz kerakmas edi", "olamiz kerak emas edi", "olamiz kerak", "olamiz kerakmas ekan edi", "olamiz kerak emas ekan edi",
+    "isuzi bor", "isuzi kerak", "isuzi kerakmas", "isuzi kerakmas ekan", "isuzi kerak emas ekan",
+    "isuzi kerakmas edi", "isuzi kerak emas edi", "isuzi kerak", "isuzi kerakmas ekan edi", "isuzi kerak emas ekan edi",
+    "kamaz bor", "kamaz kerak", "kamaz kerakmas", "kamaz kerakmas ekan", "kamaz kerak emas ekan",
+    "kamaz kerakmas edi", "kamaz kerak emas edi", "kamaz kerak", "tentli yuk", "tentli yuk bor", "tentli yuk kerak", "tentli yuk kerakmas", "tentli yuk kerakmas ekan", "tentli yuk kerak emas ekan",
+    "tentli yuk kerakmas edi", "tentli yuk kerak emas edi", "tentli yuk kerak", "tentli yuk kerakmas ekan edi", "tentli yuk kerak emas ekan edi",
+]
+
+# Ro'yxat bo'sh bo'lsa regex yaratilmaydi (aks holda bo'sh regex hamma xabarga mos kelib qoladi)
+REJECTED_RE = (
+    re.compile("|".join(re.escape(k) for k in REJECTED_KEYWORDS if k.strip()), re.IGNORECASE)
+    if any(k.strip() for k in REJECTED_KEYWORDS)
+    else None
+)
+
+def is_rejected(text):
+    """Xabarda rejected kalit so'z bo'lsa True qaytaradi."""
+    return bool(REJECTED_RE and REJECTED_RE.search(text))
 
 # =================== TELEFON REGEX ===================
 PHONE_RE = re.compile(r'(\+?998[\d\-\s\(\)]{9,15}|9\d{8})')
@@ -269,7 +313,13 @@ async def handler(event):
             return
 
         text = event.raw_text
+        # 1-qadam: oddiy kalit so'zlar tekshiriladi
         if not text or not KEYWORDS_RE.search(text):
+            return
+
+        # 2-qadam: rejected kalit so'zlar tekshiriladi, bo'lsa xabar yuborilmaydi
+        if is_rejected(text):
+            print("🚫 Rejected kalit so'z topildi, xabar yuborilmadi")
             return
 
         chat, sender = await asyncio.gather(
