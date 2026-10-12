@@ -50,6 +50,13 @@ KEYWORDS = [
     "qo'shimcha yukla bor", "qo'shimcha yuk bor edi aka", "qo'shimcha yuk bor ekan edi",
     "qowimcha yuk bor ekan edi", "qo'shimcha yuk bor ekan edi",
     "quwimca yuk bor ekan edi", "qo'shimcha yuk bor ekan edi",
+    "yuk bor 500kg", "yuk bor 500 kg", "yuk bor 500 kilo", "yuk bor 500 kilogramm",
+    "yuk bor 500 kg bor", "yuk bor 500kg bor", "1 tona yuk bor", "1 tonna yuk bor", "1 ton yuk bor", "1 ton yuk bor ekan",  
+    "1 tonna yuk bor ekan", "1 tonna yuk bor edi", "1 ton yuk bor edi", "1 ton yuk bor ekan edi", "1 tonna yuk bor ekan edi",   
+    "200 kg qoshimcha yuk bor", "200 kg qo'shimcha yuk bor", "200 kg qo'shimcha yuk bor ekan", "200 kg qo'shimcha yuk bor edi", "200 kg qo'shimcha yuk bor ekan edi",   
+    "qushimcha yuk", "qushimcha yuk bor", "qushimcha yuk bor ekan", "qushimcha yuk bor edi", "qushimcha yuk bor ekan edi",  
+    "200 kg yuk bor", "200 kg yuk bor ekan", "200 kg yuk bor edi", "200 kg yuk bor ekan edi",   
+    "100 kg yuk bor", "100 kg yuk bor ekan", "100 kg yuk bor edi", "100 kg yuk bor ekan edi"
 
     # 100–900 kg
     "100 kg yuk", "100kg yuk", "100 kilo yuk",
