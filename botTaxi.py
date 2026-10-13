@@ -28,20 +28,6 @@ TARGET_CHAT_IDS = [
 
 # =================== KALIT SO'ZLAR ===================
 KEYWORDS = [
-    # Asosiy yuk e'lonlari
-    "yuk bor mashina kerak",  "yukni olib borish kerak",
-    "yukni yetkazish kerak", "yuk chiqarish kerak",
-    "yuk bor edi bugun",
-    "qo'shimcha yuk", "qoshimcha yuk",
-    "qo'shimcha yuk bor", 
-    "qo'shimcha yuk chiqdi", "qo'shimcha yuk bor ekan",
-    "qoshimcha yuk chiqdi", "ortiqcha yuk bor",
-    "ortiqcha yuk", "yuk bor ekan aka",
-    "Labo kerak", "yuk mashina kerak", "yuk moshina kerak",
-    "laboga yuk bor", "labo yuk bor", "labo yuk bor ekan",
-    "labo yuk bor edi", "labo yuk chiqdi", "labo yuk chiqibdi",
-    "labo yuk bor ekan aka", "labo yuk bor edi aka", "labo yuk bor ekan edi",
-    "labo kerak", "Labo kerak aka", "labo kerak edi", "labo kerak ekan",
     "qoshimcha yuk bor", "qoshimcha yuk borakan",
     "qoshimcha yuk chiqdi", "qoshimcha yuk ketadi",
     "qoshimcha yuk bor edi", "qoshimcha yuk borakan",
@@ -174,7 +160,7 @@ KEYWORDS = [
     "Farg'onadan yuk bor Toshkentga",
 
     # Toshkent → Farg'ona
-    "Toshkentdan Farg'onaga yuk bor",
+    "Toshkentdan Farg'onaga qushimcha yuk bor",
     "Toshkentdan Fargonaga yuk bor",
     "Toshkentdan Farg'onaga yuk",
     "Toshkentdan Fargonaga yuk",
@@ -235,16 +221,6 @@ KEYWORDS = [
 
     # Boshqa yuk e'lonlari
     "pochta bor", "poshta bor",
-    "pochta yuk bor", "poshta yuk bor",
-    "jo'natma bor", "jo'natma yuborish kerak",
-    "yuk jo'natish bor", "yuk jo'natmoqchiman",
-    "yukim bor Toshkentga", "yukim bor Farg'onaga",
-    "Toshkentga yuboriladigan yuk bor",
-    "Farg'onaga yuboriladigan yuk bor",
-    "Toshkentga jo'natma bor",
-    "Farg'onaga jo'natma bor",
-    "Toshkentga yuk jo'nataman",
-    "Farg'onaga yuk jo'nataman",
     "yuk bor Toshkentga", "yuk bor Farg'onaga",
     "Toshkentga yuk chiqdi", "Farg'onaga yuk chiqdi",
     "Toshkentga yuk bor ekan", "Farg'onaga yuk bor ekan", "Qoshimcha yuk",
@@ -274,15 +250,6 @@ KEYWORDS = [
     "1 tonnagacha yuk bor",
     "Farg'onadan Toshkentga yuk bor", "Toshkentdan Farg'onaga yuk bor",
     "Toshkent Farg'ona qo'shimcha yuk", "Farg'ona Toshkent qo'shimcha yuk",
-    "Toshkentdan Farg'onaga yuk kerak", "Farg'onadan Toshkentga yuk kerak",
-    "Toshkentga yuk yuborish", "Farg'onaga yuk yuborish",
-    "Toshkentdan Rishtonga yuk bor", "Toshkentdan Qo'qonga yuk bor",
-    "Toshkentdan Buvaydaga yuk bor", "Toshkentdan vodiyga yuk bor",
-    "Toshkentdan Farg'ona vodiysiga yuk",
-    "Rishtondan Toshkentga yuk bor", "Qo'qondan Toshkentga yuk bor",
-    "Buvaydan Toshkentga yuk bor",
-    "Farg'onadan Ohangaronga yuk bor", "Farg'onadan Angrenga yuk bor",
-    "Farg'onadan Perevalga yuk bor",
     "Farg'onadan Toshkentga qo'shimcha yuk", "Toshkentdan Farg'onaga qo'shimcha yuk"
 ]
 
